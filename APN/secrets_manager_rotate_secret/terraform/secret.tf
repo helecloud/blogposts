@@ -6,6 +6,6 @@ resource "aws_secretsmanager_secret" "db-secret-rotation" {
 
   rotation_lambda_arn = aws_lambda_function.db_autorotation.arn
   rotation_rules {
-    automatically_after_days = 90
+    automatically_after_days = 85
   }
 }
