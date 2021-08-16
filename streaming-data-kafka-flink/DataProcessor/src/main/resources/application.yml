@@ -1,0 +1,12 @@
+
+kafka:
+  bootstrap-servers: localhost:29092
+  group-id: vehicle-group
+
+server:
+  port: 9080
+
+logging:
+  level:
+    org.apache: OFF
+    kafka: OFF
