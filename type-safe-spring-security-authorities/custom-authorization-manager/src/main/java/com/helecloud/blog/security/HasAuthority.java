@@ -10,7 +10,7 @@ import java.lang.annotation.Target;
 public @interface HasAuthority {
 
   /**
-   * The annotated method invocation will proceed if any the hasAny items is available as a
+   * The annotated method invocation will proceed if any of the hasAny items is available as a
    * GrantedAuthority in the Authentication object; default - {}
    */
   Authority[] hasAny() default {};
