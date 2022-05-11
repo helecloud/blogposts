@@ -11,14 +11,14 @@ public class DemoController {
 
   @HasAuthority(hasAny = {Authority.READ})
   @GetMapping("/")
-  public void get() {
-    System.out.println("OK");
+  public String get() {
+    return "Successful GET request";
   }
 
   @HasAuthority(hasAny = {Authority.WRITE})
   @PostMapping("/")
-  public void post() {
-    System.out.println("OK");
+  public String post() {
+    return "Successful POST request";
   }
 
 }
